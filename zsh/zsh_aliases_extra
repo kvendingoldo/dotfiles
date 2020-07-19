@@ -1,0 +1,4 @@
+#
+# git
+#
+alias git_set_ib="git config --global user.name \"Alexander Sharov\" && git config --global user.email ASharov@inspirebrands.com"

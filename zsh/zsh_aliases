@@ -1,0 +1,30 @@
+#
+# git
+#
+alias git_set_kvendingoldo="git config --global user.name \"Alexander Sharov\" && git config --global user.email kvendingoldo@yandex.ru"
+alias git_set_gd="git config --global user.name \"Alexander Sharov\" && git config --global user.email asharov@griddynamics.com"
+
+#
+# git review
+#
+alias grw='git review -r origin'
+alias grwd='git review -r origin -d'
+alias grwl='git review -r origin --list'
+alias grwx='git review -r origin -x'
+
+#
+# kubectl
+#
+alias k=kubectl
+alias ke='kubectl exec -it'
+alias kl='kubectl logs -f'
+alias kgp='kubectl get pods'
+alias kdp='k describe pod'
+alias kdebug='kubectl run -i -t debug --rm --image=caarlos0/debug --restart=Never'
+
+#
+# misc
+#
+alias alphabet="echo 'A B C D E F G H I J K L M N O P Q R S T U V W X Y Z'"
+alias xcd="nohup /Applications/xceedium/CAPAMClient &>/dev/null"
+alias weather='curl v2.wttr.in/Saratov'

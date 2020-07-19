@@ -1,0 +1,35 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/asharov/.oh-my-zsh"
+export LANG=en_US.UTF-8
+
+ZSH_THEME="robbyrussell"
+#ZSH_TMUX_AUTOSTART=true
+
+plugins=(
+  tmux
+  #ssh-agent
+  git
+  kubectl
+)
+
+# TODO: check it later
+# zstyle :omz:plugins:ssh-agent agent-forwarding on
+# style :omz:plugins:ssh-agent identities github
+# zstyle :omz:plugins:ssh-agent lifetime 36h
+
+#
+# sources
+#
+source ${ZSH}/oh-my-zsh.sh
+#source <(kubectl completion zsh)
+source ~/.zsh_aliases
+source ~/.zsh_aliases_extra
+source ~/.zsh_scripts
+
+#
+# exports
+#
+export GOPATH=/Users/asharov/go
